@@ -56,6 +56,7 @@ RUN \
     && pip install --upgrade pip \
     # install pyinstaller
     && pip install pyinstaller==$PYINSTALLER_VERSION \
+    && pip install pyarmor \
     && mkdir /src/ \
     && chmod +x /entrypoint.sh
 
