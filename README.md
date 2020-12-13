@@ -1,4 +1,4 @@
-# PyInstaller Docker Images
+# PyInstaller + PyArmor Docker Images
 
 **cdrx/pyinstaller-linux** and **cdrx/pyinstaller-windows** are a pair of Docker containers to ease compiling Python applications to binaries / exe files.
 
