@@ -3,7 +3,7 @@ FROM ubuntu:16.04
 ENV DEBIAN_FRONTEND noninteractive
 
 ARG WINE_VERSION=winehq-stable
-ARG PYTHON_VERSION=3.7.5
+ARG PYTHON_VERSION=3.9.1
 ARG PYINSTALLER_VERSION=3.6
 
 # we need wine for this all to work, so we'll use the PPA
@@ -71,7 +71,7 @@ RUN set -x \
     && cp "$W_TMP"/*.dll "$W_SYSTEM64_DLLS"/
 
 # install pyinstaller
-RUN /usr/bin/pip install pyinstaller==$PYINSTALLER_VERSION
+RUN /usr/bin/pip install pyinstaller
 RUN /usr/bin/pip install pyarmor
 
 # put the src folder inside wine
